@@ -1,19 +1,12 @@
 @import "_reset";
 @import "_variables";
+@import "_mixins";
+@import "_buttons";
 
-h2 {
-  color: $bg;
+a {
+  @extend %button;
 }
 
-.box {
-  margin-top: 20px;
-  &:hover {
-    background-color: green;
-  }
-  h2 {
-    color: blue;
-  }
-  button {
-    color: red;
-  }
+button {
+  @extend %button;
 }
